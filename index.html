@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
 </head>
 <body>
-    <header class="cabelho">
+    <header class="cabecalho">
         <div class="logo">
             Public-Hub
         </div>
@@ -23,7 +22,7 @@
             <button type="button">CONTACT US</button>
         </div>
     </header>
-
+    
     <main>
         <div class="apresentacao">
             <div class="apresentacao-descricao">
@@ -34,7 +33,7 @@
                 <p class="apresentacao--subtitulo">From finding relevant media contacts to sending eye-catching visual press releases.</p>
                 <div class="apresentacao--acoes">
                     <button class="apresentacao---button-contato">CONTACT US</button>
-                    <a class="apresentacao---button-amostra">Try Sample</a>
+                    <a class="apresentacao---button-amostra texto-cor-escuro">Try Sample</a>
                 </div>
             </div>
             <div class="apresentacao-imagem">
@@ -43,11 +42,71 @@
         </div>
         <div class="parceiros dragscroll" id="parceiros"></div>
     </main>
-
+    
     <footer>
-
+        <div class="footer-cabecalho">
+            <div class="footer-cabecalho-titulo">
+                <span>Public-Hub</span>
+            </div>
+            <div class="footer-cabecalho-acoes">
+                <span>Ready to get started?</span>
+                <button type="button" class="footer-cabecalho-acoes-button">Get Started</button>
+            </div>
+        </div>
+        <div class="footer-corpo">
+            <div class="footer-inscricao">
+                <p>Subscribe to our newsletter</p>
+                <div class="footer-input-group">
+                    <input type="email" name="email" class="footer-input-control" placeholder="Email address">
+                    <span class="icon">
+                        <img src="imagens/right-chevron.png" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-menus-links">
+                    <h4>Services</h4>
+                    <a href="#">Email Marketing</a>
+                    <a href="#">Campaigns</a>
+                    <a href="#">Branding</a>
+                    <a href="#">Offline</a>
+                </div>
+                <div class="footer-menus-links">
+                    <h4>About</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Benefits</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-menus-links">
+                    <h4>Navigation</h4>
+                    <a href="#">Email Marketing</a>
+                    <a href="#">Campaigns</a>
+                    <a href="#">Branding</a>
+                    <a href="#">Offline</a>
+                </div>
+                <div class="footer-menus-links">
+                    <h4>Help</h4>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-contatos">
+            <div class="footer-contatos-sociais">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="imagens/facebook.svg" alt="Facebook" class="icone-social"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="icone-social" src="imagens/instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="imagens/twitter.svg" alt="Twitter" class="icone-social"></a>
+            </div>
+            <div class="footer-contatos-contrato">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
     </footer>
-
-    <script src="js/main.js"></script>
+    
+    <script src="js/parceiro.js"></script>
+    <!-- SCRIPT USADO PARA O EFEITO DE ROLAR AO ARRASTAR COM O MOUSE -->
+    <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
 </body>
 </html>

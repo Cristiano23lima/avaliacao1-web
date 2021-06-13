@@ -6,26 +6,26 @@
 }
 
 body{
-    background-color: #e6ffff;
+    background-color: #f3fafc;
 }
 
 /*PERSONALIZAÇÃO PADRÃO*/
 
 .texto-cor-escuro{
-    color: #071910;
+    color: #0f231f;
 }
 
 /*END PERSONALIZAÇÃO PADRÃO*/
 
 
-.cabelho{
+.cabecalho{
     width: 100%;
     height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #cecece;
+    border-bottom: 1px solid #eff5f8;
 }
 
 .logo{
@@ -33,6 +33,7 @@ body{
     font-size: 23px;
     font-family: 'Oswald', 'Helvetica';
     font-weight: 600;
+    color: #1d1f20;
 }
 
 .menu{
@@ -42,7 +43,7 @@ body{
 .menu > a{
     text-decoration: none;
     font-size: 18px;
-    color: #cecece;
+    color: #c9d0d3;
     padding-right: 20px;
     font-weight: 400;
     transition: 0.2s opacity;
@@ -53,13 +54,13 @@ body{
 }
 
 .menu > a.active{
-    color: #071910 ;
+    color: #4b5b5a ;
 }
 
 .menu > button{
     width: 150px;
     height: 40px;
-    background-color: #071910;
+    background-color: #0f241f;
     color: #fff;
     border: 0;
     cursor: pointer;
@@ -94,6 +95,7 @@ body{
 
 .aprensetacao--titulo-parte2{
     font-weight: 200;
+    color: #839090;
 }
 
 .apresentacao--subtitulo{
@@ -103,7 +105,7 @@ body{
     position: relative;
     font-size: 22px;
     font-weight: 400;
-    color: #A4A4A4;
+    color: #d1dadb;
     line-height: 28px;
     margin-top: 20px;
 }
@@ -117,7 +119,7 @@ body{
 .apresentacao---button-contato{
     width: 200px;
     height: 60px;
-    background-color: #071910;
+    background-color: #0a222a;
     color: #fff;
     border: 0;
     cursor: pointer;
@@ -139,6 +141,7 @@ body{
     cursor: pointer;
     transition: 0.2s opacity;
     margin-right: 8px;
+    font-weight: 500;
 }
 
 .apresentacao---button-amostra:hover{
@@ -163,7 +166,7 @@ body{
 .parceiros{
     height: 100px;
     display: flex;
-    background-color: #071910;
+    background-color: #0a222a;
     flex-direction: row;
     align-items: center;
     overflow-x: auto;
@@ -177,6 +180,191 @@ body{
 .parceiros-nome{
     font-size: 30px;
     position: relative;
-    color: #ffffff;
+    color: #c3cfd3;
     padding: 0 90px;
+}
+
+footer{
+    background-color: #0a222a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 90px;
+    margin-top: 30px;
+}
+
+.footer-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: thin solid #122a32;
+    padding-bottom: 40px;
+}
+
+.footer-cabecalho-titulo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: #5d767e;
+    font-weight: 500;
+}
+
+.footer-cabecalho-acoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-cabecalho-acoes > span{
+    font-size: 20px;
+    color: #a3aeb0;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.footer-cabecalho-acoes-button{
+    width: 180px;
+    height: 50px;
+    border-radius: 0;
+    border: 0;
+    font-size: 18px;
+    background-color: #cfecf4;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    color: rgba(0, 0, 0, 0.8);
+}
+.footer-cabecalho-acoes-button:hover{
+    opacity: 0.8;
+}
+
+.footer-corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer-inscricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-inscricao > p{
+    width: 200px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #889799;
+}
+
+.footer-input-group{
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.footer-input-control{
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    font-size: 19px;
+    background-color: #132a32;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none !important;
+    border: 2px solid #193038;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-input-control::-webkit-input-placeholder { /* Edge */
+    color: #50636a;
+}
+  
+.footer-input-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #50636a;
+}
+
+.footer-input-control::placeholder {
+    color: #50636a;
+}
+
+.footer-input-control:focus{
+    outline: none;
+}
+
+.icon{
+  padding: 11px;
+  padding-bottom: 8px;
+  background: #cfecf4;
+  color: black;
+  border-left: none!important;
+  border: 2px solid #193038;
+  min-width: 50px;
+  text-align: center;
+  font-family: "Helvetica";
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.icon > img{
+    width: 18px;
+}
+
+.footer-menus{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.footer-menus-links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.footer-menus-links > h4{
+    font-size: 22px;
+    color: #7f99a2;
+    font-weight: 400;
+}
+
+.footer-menus-links > a{
+    text-decoration: none;
+    color: #43585e;
+    margin-top: 19px;
+    transition: 0.2s opacity;
+}
+
+.footer-menus-links > a:hover{
+    opacity: 0.8;
+}
+
+.footer-contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-contatos-sociais{
+    display: flex;
+}
+
+.icone-social{
+    width: 20px;
+    margin-right: 20px;
+}
+
+.footer-contatos-contrato{
+    display: flex;
+}
+
+.footer-contatos-contrato > a{
+    font-size: 16px;
+    color: #9ba8ad;
+    padding-left: 35px;
+    text-decoration: none;
+    transition: 0.2s opacity;
+}
+
+.footer-contatos-contrato > a:hover{
+    opacity: 0.8;
 }
