@@ -9,22 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="cabecalho">
+<body onscroll="menuFixado()">
+    <header class="cabecalho" id="cabecalho">
         <div class="logo">
             Public-Hub
         </div>
         <div class="menu">
-            <a href="#" class="active">HOME</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">AWARDS</a>
-            <a href="#">SERVICES</a>
+            <a href="#home" class="active">HOME</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#contato">CONTATO</a>
             <button type="button">CONTACT US</button>
         </div>
     </header>
+
+    <div class="separador"></div>
     
     <main>
-        <div class="apresentacao">
+        <div class="apresentacao" id="home">
             <div class="apresentacao-descricao">
                 <h3 class="apresentacao--titulo"> 
                     <span class="texto-cor-escuro"> Maintaining <br> relation </span> 
@@ -41,7 +42,7 @@
             </div>
         </div>
         <div class="parceiros dragscroll" id="parceiros"></div>
-        <div class="sobre">
+        <div class="sobre" id="sobre">
             <div class="sobre-titulo">
                 <div class="d-flex">
                     <div class="sobre-titulo-nome">
@@ -94,8 +95,8 @@
                 <span>Public-Hub</span>
             </div>
             <div class="footer-cabecalho-acoes">
-                <span>Ready to get started?</span>
-                <button type="button" class="footer-cabecalho-acoes-button">Get Started</button>
+                <span>Veja nossos créditos: </span>
+                <button type="button" class="footer-cabecalho-acoes-button">Créditos</button>
             </div>
         </div>
         <div class="footer-corpo">
@@ -150,6 +151,7 @@
         </div>
     </footer>
     
+    <script src="js/main.js"></script>
     <script src="js/parceiro.js"></script>
     <!-- SCRIPT USADO PARA O EFEITO DE ROLAR AO ARRASTAR COM O MOUSE -->
     <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
