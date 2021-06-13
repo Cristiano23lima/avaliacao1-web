@@ -261,6 +261,76 @@ body{
 .sobre-titulo-button > button:hover{
     opacity: 0.8;
 }
+
+.sobre-equipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sobre-equipe-caixa{
+    width: 31%;
+    height: 310px;
+    background-color: #cfecf4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.sobre-equipe-caixa > img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    /* padding-top: 20px; */
+    margin-top: 20px;
+}
+
+.sobre-equipe-caixa-info{
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-equipe-caixa-info > p{
+    font-size: 24px;
+    color: #2d4444;
+    font-weight: 600;
+    line-height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: -10px;
+
+}
+
+.sobre---button{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sobre---button > button{
+    width: 60px;
+    height: 65px;
+    background-color: #0f241f;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.sobre---button > button:hover{
+    opacity: 0.8;
+}
+
 /* FIM PAGINA SOBRE DO SITE */
 
 /* RODAPE DO SITE */
