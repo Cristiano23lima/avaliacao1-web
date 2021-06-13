@@ -15,9 +15,13 @@ body{
     color: #0f231f;
 }
 
+.d-flex{
+    display: flex;
+}
+
 /*END PERSONALIZAÇÃO PADRÃO*/
 
-
+/* MENU */
 .cabecalho{
     width: 100%;
     height: 80px;
@@ -71,7 +75,9 @@ body{
 .menu > button:hover{
     opacity: 0.8;
 }
+/* FIM DO MENU */
 
+/* PAGINA HOME DO SITE */
 .apresentacao{
     display: flex;
     flex-direction: row;
@@ -162,7 +168,9 @@ body{
 .apresentacao-imagem > img{
     width: 560px;
 }
+/* FIM PAGINA HOME DO SITE */
 
+/* PAGINA PARCEIROS DO SITE */
 .parceiros{
     height: 100px;
     display: flex;
@@ -183,7 +191,79 @@ body{
     color: #c3cfd3;
     padding: 0 90px;
 }
+/* FIM PAGINA PARCEIROS DO SITE */
 
+/* PAGINA SOBRE DO SITE */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 80px;
+    margin-top: 40px;
+    padding-bottom: 0px;
+}
+
+.sobre-titulo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sobre-titulo-nome{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-titulo-nome > p:nth-child(1){
+    font-size: 18px;
+    color: #c5c8c9;
+    font-weight: 500;
+}
+
+.sobre-titulo-nome > p:nth-child(2){
+    font-size: 38px;
+    color: #263833;
+    width: 400px;
+    line-height: 50px;
+}
+
+.sobre-titulo-descricao{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sobre-titulo-descricao > p{
+    font-size: 16px;
+    max-width: 450px;
+    font-weight: 500;
+    color: #d1d4d4;
+    line-height: 25px;
+}
+
+.sobre-titulo-button{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sobre-titulo-button > button{
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #0f241f;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: .2s opacity;
+}
+
+.sobre-titulo-button > button:hover{
+    opacity: 0.8;
+}
+/* FIM PAGINA SOBRE DO SITE */
+
+/* RODAPE DO SITE */
 footer{
     background-color: #0a222a;
     width: 100%;
