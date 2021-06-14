@@ -143,7 +143,7 @@ body{
     border: 0;
     cursor: pointer;
     transition: 0.2s opacity;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -345,6 +345,118 @@ body{
 }
 
 /* FIM PAGINA SOBRE DO SITE */
+
+/* PAGINA DE CONTATO */
+.contato{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.contato-titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-titulo > h4{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a222a;
+}
+
+.contato-descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 80px;
+    margin-top: 50px;
+}
+
+.contato-informacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato--dado > span{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #43585e;
+}
+
+.contato--dado > a{
+    text-decoration: none;
+    color: #0a222a;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: 0.2s opacity;
+    width: 170px;
+}
+
+.contato--dado > a:hover{
+    opacity: 0.8;
+}
+
+.contato-enviar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.contato-input-group{
+    display: flex;
+    width: 500px;
+}
+
+.contato-input-group > input, .contato-input-group > textarea{
+    width: 100%;
+    border-radius: 0;
+    padding: 8px;
+    font-size: 19px;
+    background-color: #132a32;
+    border: 2px solid #193038;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+.contato-input-group > input{
+    height: 45px;
+}
+
+.contato-input-group > textarea{
+    height: 140px;
+    resize: none;
+}
+
+.contato-input-group > input:focus, .contato-input-group > textarea:focus{
+    outline: none;
+}
+
+.contato-acoes{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.contato-acoes > button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: #43585e;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    transition: 0.2s opacity;
+    cursor: pointer;
+}
+
+.contato-acoes > button:hover{
+    opacity: 0.8;
+}
+/* FIM DA PAGINA DE CONTATO */
 
 /* RODAPE DO SITE */
 footer{
