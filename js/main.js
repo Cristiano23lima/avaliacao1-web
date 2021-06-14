@@ -4,7 +4,6 @@ var menuEstaFixo = false;
 var linkMenu = document.querySelector(".menu > a");
 
 function menuFixado(){
-
     if(tagHtml.scrollTop > 80 && !menuEstaFixo){
         menuEstaFixo = true;
         cabecalho.style.position = "fixed";
@@ -28,10 +27,11 @@ function mostrarOcultarPopUp(idPopup){
     }
 }
 
+var quantMensagensCriadas = 0;
 function addMensagem(){
     let muralMensagens = document.getElementById("mural-mensagens");
     let nomeInput = document.querySelector("#aprensetacao-nome");
-    let mensagemInput = document.getElementById("apresentacao-mensagem");
+    let mensagemInput = document.getElementById("apresentacao-mensagem");    
 
     let nome = nomeInput.value;
     let mensagem = mensagemInput.value;
@@ -43,6 +43,13 @@ function addMensagem(){
         let divAA = document.createElement("div");
         let divAC = document.createElement("div");//div avatar de conteudo
         let idAleatorio = "mensagem_"+Date.now();
+
+        //removendo e adicionando classes no pai
+        if(quantMensagensCriadas <=0){
+            muralMensagens.classList.add("apresentacao-mural-mensagens");
+            let img = document.querySelector("#mural-mensagens > img");
+            img.setAttribute("class", "ocultar");
+        }
     
         divAC.innerHTML = "<p>"+nome+"</p>\
             <p>"+mensagem+"</p>\
@@ -68,16 +75,24 @@ function addMensagem(){
 
         mensagemInput.value=null;
         nomeInput.value=  null;
+        quantMensagensCriadas++;
     }else{
         alert("Por favor, preencha o campo nome e mensagem");
     }
 
 }
 
-function excluirMensagem(idElemento){
-    let muralMensagens = document.getElementById("mural-mensagens");
-    let filhoASerExcluido = document.getElementById(idElemento);
-    muralMensagens.removeChild(filhoASerExcluido.nodeValue);
+function excluirMensagem(elemento){
+    let muralMsg = document.getElementById("mural-mensagens");
+    
+    muralMsg.removeChild(elemento);
+    quantMensagensCriadas--;
+    
+    if(quantMensagensCriadas == 0){
+        let img = document.querySelector("#mural-mensagens > img");
+        img.classList.remove("ocultar");
+        muralMsg.classList.remove("apresentacao-mural-mensagens");
+    }
 }
 
 var buttonFecharPopUp = document.getElementById("popup-fechar");
