@@ -17,7 +17,6 @@ function menuFixado(){
     }
 }
 
-//estado: boolean
 function mostrarOcultarPopUp(){
     let popUp = document.getElementById("popup");
     let arrayClass = popUp.getAttribute("class").split(" ");
