@@ -130,6 +130,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+    margin-bottom: 15px;
 }
 
 .apresentacao--titulo{
@@ -253,6 +254,97 @@ body{
 
 .apresentacao-imagem > img{
     width: 560px;
+}
+
+.apresentacao-mural-mensagens{
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.apresentacao-mural-mensagens::-webkit-scrollbar{
+    width: 12px;
+}
+
+.apresentacao-mural-mensagens::-webkit-scrollbar-thumb{
+    background-color: #cfecf4;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;
+}
+
+.apresentacao-mural-mensagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    background-color: #cfecf4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.apresentacao---button{
+    display: flex;
+    width: 100px;
+    height: 40px;
+}
+
+.apresentacao---button > button{
+    width: 100%;
+    background-color: #F24236;
+    border: 0;
+    border-radius: 0;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s opacity;
+}
+
+.apresentacao---button > button:hover{
+    opacity: 0.8;
+}
+
+.apresentacao--info{
+    display: flex;
+    align-items: center;
+}
+
+.apresentacao--avatar{
+    width: 70px;
+    height: 70px;
+    background-color: #0a222a;
+    border-radius: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3fafc;
+    text-transform: uppercase;
+    margin-right: 13px;
+}
+
+.apresentacao--conteudo{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.apresentacao--conteudo > p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    color: #c3cfd3;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.apresentacao--conteudo > p:nth-child(2){
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+    color: #0a222a;
 }
 /* FIM PAGINA HOME DO SITE */
 

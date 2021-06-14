@@ -43,19 +43,20 @@
                     </div>
                     <div class="apresentacao-popup-form">
                         <div class="apresentacao-input-group">
-                            <input type="text" name="nome" placeholder="Nome">
+                            <input type="text" name="nome" placeholder="Nome" id="aprensetacao-nome">
                         </div>
                         <div class="apresentacao-input-group">
-                            <textarea name="mensagem" id="" placeholder="mensagem" re></textarea>
+                            <textarea name="mensagem" placeholder="mensagem" id="apresentacao-mensagem"></textarea>
                         </div>
                         <div class="apresentacao-acoes">
-                            <button type="button">Enviar</button>
+                            <button type="button" onclick="addMensagem()">Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="apresentacao-imagem">
-                <img src="imagens/foto-1.png" alt="Mulher no PC" width="600">
+            <div class="apresentacao-imagem apresentacao-mural-mensagens" id="mural-mensagens">
+
+                <!-- <img src="imagens/foto-1.png" alt="Mulher no PC" width="600"> -->
             </div>
         </div>
         <div class="parceiros dragscroll" id="parceiros"></div>
@@ -63,11 +64,11 @@
             <div class="sobre-titulo">
                 <div class="d-flex">
                     <div class="sobre-titulo-nome">
-                        <p>Our Troops</p>
-                        <p><b>Professional</b> and <b>friendly</b> Counsultant</p>
+                        <p>Nossas Tropas</p>
+                        <p><b>Profissionais</b> e <b>amigos</b> consultores</p>
                     </div>
                     <div class="sobre-titulo-descricao">
-                        <p>We have talented consultant <br>that will help you with best public relation advice</p>
+                        <p>Temos consultor talentoso que irá ajudá-lo <br>com os melhores conselhos de relações públicas</p>
                     </div>
                 </div>
                 <div class="sobre-titulo-button">
@@ -127,7 +128,7 @@
                         <input type="text" name="assunto" placeholder="Assunto">
                     </div>
                     <div class="contato-input-group">
-                        <textarea name="mensagem" id="" placeholder="mensagem" re></textarea>
+                        <textarea name="mensagem" id="" placeholder="mensagem"></textarea>
                     </div>
                     <div class="contato-acoes">
                         <button type="button">Enviar</button>
