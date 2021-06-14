@@ -16,3 +16,19 @@ function menuFixado(){
         cabecalho.style.backgroundColor = "transparent";
     }
 }
+
+//estado: boolean
+function mostrarOcultarPopUp(){
+    let popUp = document.getElementById("popup");
+    let arrayClass = popUp.getAttribute("class").split(" ");
+    
+    if(arrayClass.includes("ocultar")){
+        popUp.classList.remove("ocultar");
+    }else{
+        popUp.classList.add("ocultar");
+    }
+}
+
+var buttonFecharPopUp = document.getElementById("popup-fechar");
+document.body.onload = mostrarOcultarPopUp();
+addEventListener(buttonFecharPopUp, "onclick", mostrarOcultarPopUp());
