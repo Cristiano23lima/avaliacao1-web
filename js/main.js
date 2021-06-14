@@ -17,10 +17,10 @@ function menuFixado(){
     }
 }
 
-function mostrarOcultarPopUp(){
-    let popUp = document.getElementById("popup");
+function mostrarOcultarPopUp(idPopup){
+    let popUp = document.getElementById(idPopup);
     let arrayClass = popUp.getAttribute("class").split(" ");
-    
+
     if(arrayClass.includes("ocultar")){
         popUp.classList.remove("ocultar");
     }else{
@@ -29,5 +29,8 @@ function mostrarOcultarPopUp(){
 }
 
 var buttonFecharPopUp = document.getElementById("popup-fechar");
-document.body.onload = mostrarOcultarPopUp();
-addEventListener(buttonFecharPopUp, "onclick", mostrarOcultarPopUp());
+// document.body.onload = mostrarOcultarPopUp('popupApresentacao');
+// document.body.onload = mostrarOcultarPopUp('popup');
+
+document.addEventListener('onload', mostrarOcultarPopUp('popupApresentacao'));
+document.addEventListener('onload', mostrarOcultarPopUp('popup'));

@@ -33,8 +33,25 @@
                 </h3>
                 <p class="apresentacao--subtitulo">From finding relevant media contacts to sending eye-catching visual press releases.</p>
                 <div class="apresentacao--acoes">
-                    <button class="apresentacao---button-contato">ENVIAR MENSAGEM</button>
+                    <button class="apresentacao---button-contato" onclick="mostrarOcultarPopUp('popupApresentacao')">ENVIAR MENSAGEM</button>
                     <a class="apresentacao---button-amostra texto-cor-escuro">Try Sample</a>
+                </div>
+                <div class="apresentacao-popup" id="popupApresentacao">
+                    <div class="apresentacao-popup-cabecalho">
+                        <span class="apresentacao-popup-close" onclick="mostrarOcultarPopUp('popupApresentacao')">X</span>
+                        <h3>Nos deixe uma mensagem</h3>
+                    </div>
+                    <div class="apresentacao-popup-form">
+                        <div class="apresentacao-input-group">
+                            <input type="text" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="apresentacao-input-group">
+                            <textarea name="mensagem" id="" placeholder="mensagem" re></textarea>
+                        </div>
+                        <div class="apresentacao-acoes">
+                            <button type="button">Enviar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="apresentacao-imagem">
@@ -127,10 +144,10 @@
             </div>
             <div class="footer-cabecalho-acoes">
                 <span>Veja nossos créditos: </span>
-                <button type="button" class="footer-cabecalho-acoes-button" onclick="mostrarOcultarPopUp()">Créditos</button>
-                <div class="footer-inscricao-popup ocultar" id="popup">
+                <button type="button" class="footer-cabecalho-acoes-button" onclick="mostrarOcultarPopUp('popup')">Créditos</button>
+                <div class="footer-inscricao-popup" id="popup">
                     <div class="footer-popup-cabecalho">
-                        <span class="footer-popup-close" onclick="mostrarOcultarPopUp()">X</span>
+                        <span class="footer-popup-close" onclick="mostrarOcultarPopUp('popup')">X</span>
                         <h3>Desenvolvimento WEB</h3>
                     </div>
                     <div class="footer-membros">
